@@ -1,0 +1,47 @@
+:root {
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --blue-dark: #1F2833;
+  --blue-lux: #2E86AB;
+  --gray-light: #F5F5F5;
+}
+
+body {
+  background: var(--gray-light);
+  color: var(--black);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background: var(--black);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--white) !important;
+}
+
+.hero-section {
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.btn-primary {
+  background: var(--blue-lux);
+  border: none;
+}
+
+.property-card {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.property-card:hover {
+  transform: scale(1.03);
+}
+
+.footer {
+  background: var(--blue-dark);
+  color: white;
+}
