@@ -45,3 +45,13 @@ body {
   background: var(--blue-dark);
   color: white;
 }
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.property-card img {
+  height: 160px;
+  object-fit: cover;
+}
