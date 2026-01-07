@@ -44,19 +44,29 @@
 </div>
 
     <div class="listings-grid mt-3">
-      <div class="property-card">
-        <img src="images/house1.jpg">
-        <div class="property-info">
-          <div class="d-flex justify-content-between">
-            <span><i class="bi bi-geo-alt"></i> Masaki</span>
-            <span><i class="bi bi-star-fill text-warning"></i> 4.8</span>
-          </div>
-          <div class="property-title">Modern Apartment</div>
-          <div class="property-price">$95 / night</div>
-        </div>
+
+<a href="property.html"
+   class="property-link text-decoration-none text-dark"
+   data-name="Modern Apartment"
+   data-price="95"
+   data-status="rent"
+   data-category="apartment">
+
+  <div class="property-card">
+    <img src="house1.jpg">
+    <div class="property-info">
+      <div class="d-flex justify-content-between">
+        <span><i class="bi bi-geo-alt"></i> Masaki</span>
+        <span><i class="bi bi-star-fill text-warning"></i> 4.8</span>
       </div>
+      <div class="property-title">Modern Apartment</div>
+      <div class="property-price">$95 / night</div>
     </div>
   </div>
+
+</a>
+
+
 
   <!-- MAP -->
   <div class="map-area">
@@ -69,25 +79,43 @@
 
 <script>
 const params = new URLSearchParams(window.location.search);
+const categoryParam = params.get('category');
 
-if (params.get('name')) {
-  document.getElementById('searchName').value = params.get('name');
+function filterProperties() {
+  const nameValue = nameInput.value.toLowerCase();
+  const priceValue = priceInput.value;
+  const statusValue = statusInput.value;
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    const price = parseInt(card.dataset.price);
+    const status = card.dataset.status;
+    const category = card.dataset.category;
+
+    let visible = true;
+
+    if (nameValue && !name.includes(nameValue)) visible = false;
+    if (priceValue && price > priceValue) visible = false;
+    if (statusValue && status !== statusValue) visible = false;
+
+    // ✅ CATEGORY FILTER
+    if (categoryParam && category !== categoryParam) visible = false;
+
+    card.style.display = visible ? 'block' : 'none';
+  });
 }
-if (params.get('price')) {
-  document.getElementById('searchPrice').value = params.get('price');
-}
-if (params.get('status')) {
-  document.getElementById('searchStatus').value = params.get('status');
-}
+
+
 
 // Trigger filter after setting values
 filterProperties();
 </script>
+<script>
 
 
 
   
-<script>
+
 const nameInput = document.getElementById('searchName');
 const priceInput = document.getElementById('searchPrice');
 const statusInput = document.getElementById('searchStatus');
