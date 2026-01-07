@@ -176,9 +176,18 @@ body {
   border-bottom: 2px solid #000;
 }
 /* HERO CENTERING */
-.hero-section {
+/*.hero-section {
   padding: 40px 0 25px;
+}*/
+.hero-section {
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
+
+#properties {
+  margin-top: 10px;
+}
+
 
 .hero-inner {
   max-width: 1100px;
