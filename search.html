@@ -66,6 +66,27 @@
   </div>
 
 </div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get('name')) {
+  document.getElementById('searchName').value = params.get('name');
+}
+if (params.get('price')) {
+  document.getElementById('searchPrice').value = params.get('price');
+}
+if (params.get('status')) {
+  document.getElementById('searchStatus').value = params.get('status');
+}
+
+// Trigger filter after setting values
+filterProperties();
+</script>
+
+
+
+  
 <script>
 const nameInput = document.getElementById('searchName');
 const priceInput = document.getElementById('searchPrice');
