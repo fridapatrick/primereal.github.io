@@ -55,3 +55,40 @@ body {
   height: 160px;
   object-fit: cover;
 }
+/* Airbnb-style cards */
+.property-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.property-card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 10px;
+}
+
+.property-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.property-location {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.property-price {
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.property-rating {
+  font-size: 12px;
+  font-weight: 600;
+}
