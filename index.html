@@ -54,6 +54,41 @@
       <p class="lead">Luxury listings in the best locations</p>
       <a href="#properties" class="btn btn-primary btn-lg">View Listings</a>
     </div>
+
+    <form action="search.html" method="GET" class="search-bar mt-4">
+
+  <div class="row g-2 align-items-center">
+
+    <!-- Property name -->
+    <div class="col-md-4">
+      <input type="text" name="name" class="form-control"
+             placeholder="Search by property name">
+    </div>
+
+    <!-- Max price -->
+    <div class="col-md-3">
+      <input type="number" name="price" class="form-control"
+             placeholder="Max price">
+    </div>
+
+    <!-- Status -->
+    <div class="col-md-3">
+      <select name="status" class="form-select">
+        <option value="">Any status</option>
+        <option value="rent">For Rent</option>
+        <option value="sale">For Sale</option>
+      </select>
+    </div>
+
+    <!-- Button -->
+    <div class="col-md-2 d-grid">
+      <button class="btn btn-primary">Search</button>
+    </div>
+
+  </div>
+
+</form>
+
   </header>
 <section class="container my-5">
   <h4 class="mb-3">Featured in Dar es Salaam</h4>
