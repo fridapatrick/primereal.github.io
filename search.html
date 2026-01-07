@@ -66,6 +66,36 @@
   </div>
 
 </div>
+<script>
+const nameInput = document.getElementById('searchName');
+const priceInput = document.getElementById('searchPrice');
+const statusInput = document.getElementById('searchStatus');
+const cards = document.querySelectorAll('.property-link');
+
+function filterProperties() {
+  const nameValue = nameInput.value.toLowerCase();
+  const priceValue = priceInput.value;
+  const statusValue = statusInput.value;
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    const price = parseInt(card.dataset.price);
+    const status = card.dataset.status;
+
+    let visible = true;
+
+    if (nameValue && !name.includes(nameValue)) visible = false;
+    if (priceValue && price > priceValue) visible = false;
+    if (statusValue && status !== statusValue) visible = false;
+
+    card.style.display = visible ? 'block' : 'none';
+  });
+}
+
+nameInput.addEventListener('input', filterProperties);
+priceInput.addEventListener('input', filterProperties);
+statusInput.addEventListener('change', filterProperties);
+</script>
 
 </body>
 </html>
