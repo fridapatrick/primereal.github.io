@@ -20,12 +20,6 @@ body {
   color: var(--white) !important;
 }
 
-.hero-section {
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
 
 .btn-primary {
   background: var(--blue-lux);
@@ -180,4 +174,46 @@ body {
 .category-item.active {
   color: #000;
   border-bottom: 2px solid #000;
+}
+/* HERO CENTERING */
+.hero-section {
+  padding: 40px 0 25px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* SEARCH BAR CENTER */
+.search-bar {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* CATEGORY CENTERING */
+.category-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.category-bar {
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* MOBILE SCROLL */
+.category-bar {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* ICON STYLE */
+.category-item {
+  min-width: 70px;
 }
