@@ -149,3 +149,35 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+/* CATEGORY ICON HERO (Airbnb-style) */
+.category-bar {
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.category-item {
+  text-align: center;
+  color: #6c757d;
+  font-size: 13px;
+  text-decoration: none;
+  padding-bottom: 8px;
+  min-width: 70px;
+}
+
+.category-item i {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.category-item:hover {
+  color: #000;
+}
+
+.category-item.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
