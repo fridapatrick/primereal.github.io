@@ -49,76 +49,78 @@
   </nav>
 
   <!-- Hero -->
-  <header class="hero-section text-center">
-   
+  <!-- Hero -->
+<header class="hero-section">
 
-    <form action="search.html" method="GET" class="search-bar mt-4">
+  <div class="hero-inner">
 
-  <div class="row g-2 align-items-center">
+    <!-- SEARCH BAR -->
+    <form action="search.html" method="GET" class="search-bar">
 
-    <!-- Property name -->
-    <div class="col-md-4">
-      <input type="text" name="name" class="form-control"
-             placeholder="Search by property name">
-    </div>
+      <div class="row g-2 align-items-center justify-content-center">
 
-    <!-- Max price -->
-    <div class="col-md-3">
-      <input type="number" name="price" class="form-control"
-             placeholder="Max price">
-    </div>
+        <div class="col-md-4">
+          <input type="text" name="name" class="form-control"
+                 placeholder="Search by property name">
+        </div>
 
-    <!-- Status -->
-    <div class="col-md-3">
-      <select name="status" class="form-select">
-        <option value="">Any status</option>
-        <option value="rent">For Rent</option>
-        <option value="sale">For Sale</option>
-      </select>
-    </div>
+        <div class="col-md-3">
+          <input type="number" name="price" class="form-control"
+                 placeholder="Max price">
+        </div>
 
-    <!-- Button -->
-    <div class="col-md-2 d-grid">
-      <button class="btn btn-primary">Search</button>
+        <div class="col-md-3">
+          <select name="status" class="form-select">
+            <option value="">Any status</option>
+            <option value="rent">For Rent</option>
+            <option value="sale">For Sale</option>
+          </select>
+        </div>
+
+        <div class="col-md-2 d-grid">
+          <button class="btn btn-primary">Search</button>
+        </div>
+
+      </div>
+    </form>
+
+    <!-- CATEGORY ICONS -->
+    <div class="category-wrapper mt-4">
+
+      <div class="category-bar justify-content-center">
+
+        <a href="search.html?category=home" class="category-item active">
+          <i class="bi bi-house-door"></i>
+          <span>Homes</span>
+        </a>
+
+        <a href="search.html?category=apartment" class="category-item">
+          <i class="bi bi-buildings"></i>
+          <span>Apartments</span>
+        </a>
+
+        <a href="search.html?category=office" class="category-item">
+          <i class="bi bi-briefcase"></i>
+          <span>Offices</span>
+        </a>
+
+        <a href="search.html?category=phone" class="category-item">
+          <i class="bi bi-phone"></i>
+          <span>Phones</span>
+        </a>
+
+        <a href="search.html?category=laptop" class="category-item">
+          <i class="bi bi-laptop"></i>
+          <span>Laptops</span>
+        </a>
+
+      </div>
+
     </div>
 
   </div>
 
-</form>
-<section class="container mt-4">
-
-  <div class="category-bar">
-
-    <a href="search.html?category=home" class="category-item active">
-      <i class="bi bi-house-door"></i>
-      <span>Homes</span>
-    </a>
-
-    <a href="search.html?category=apartment" class="category-item">
-      <i class="bi bi-buildings"></i>
-      <span>Apartments</span>
-    </a>
-
-    <a href="search.html?category=office" class="category-item">
-      <i class="bi bi-briefcase"></i>
-      <span>Offices</span>
-    </a>
-
-    <a href="search.html?category=phone" class="category-item">
-      <i class="bi bi-phone"></i>
-      <span>Phones</span>
-    </a>
-
-    <a href="search.html?category=laptop" class="category-item">
-      <i class="bi bi-laptop"></i>
-      <span>Laptops</span>
-    </a>
-
-  </div>
-
-</section>
-
-  </header>
+</header>
 <section class="container my-5">
   <h4 class="mb-3">Featured in Dar es Salaam</h4>
 
