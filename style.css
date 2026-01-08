@@ -265,6 +265,56 @@ body {
   margin-top: 6px;
   color: #444;
 }
+/* EXPERT BADGES */
+.expert-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.expert-card {
+  position: relative;
+}
+
+/* Rating */
+.rating {
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rating i {
+  color: #ff385c; /* Airbnb pink */
+}
+
+/* Heart */
+.heart {
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.heart i {
+  font-size: 16px;
+}
+
+/* Hover effect */
+.heart:hover i {
+  color: #ff385c;
+}
+
+
 .booking-card {
   position: sticky;
   top: 80px;
