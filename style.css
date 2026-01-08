@@ -265,3 +265,11 @@ body {
   margin-top: 6px;
   color: #444;
 }
+.booking-card {
+  position: sticky;
+  top: 80px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
